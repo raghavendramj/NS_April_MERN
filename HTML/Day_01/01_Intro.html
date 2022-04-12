@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Intro to Web Development</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      function loadData() {
+        console.log("Welcome to JS");
+        alert("Welcome to JS");
+
+        let data = document.getElementById("data1");
+        data.innerHTML = "You have successfully loaded the data!";
+
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open(
+          "GET",
+          "https://jsonplaceholder.typicode.com/todos/",
+          true
+        );
+        xmlHttp.send();
+
+        xmlHttp.onreadystatechange = () => {
+          if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+            let data2 = document.getElementById("tableBody"); 
+
+            let dataOutput = JSON.parse(xmlHttp.response); 
+            console.log(dataOutput);
+            let markup = dataOutput.map(each => {                
+                return `<tr>
+                            <td>${each.id}</td>
+                            <td>${each.userId}</td>
+                            <td>${each.title}</td>
+                            <td>${each.completed}</td> 
+                        </tr>
+                        `}).join('');
+
+          console.log(markup);
+
+          data2.innerHTML = markup;
+
+          }
+        };
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <div>Welcome to the world of web development</div>
+      <button class="btn btn-primary" onclick="loadData()">Load Data</button>
+      <p class="mt-3" id="data1"></p> 
+      <p class="mt-3" id="data2"></p> 
+      <table class="table table-striped">
+          <thead>
+            <tr>
+                <th>UserId</th>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Completed</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+              
+          </tbody>
+      </table>
+    </div>
+  </body>
+</html>
