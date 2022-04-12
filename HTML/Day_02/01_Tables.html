@@ -1,3 +1,44 @@
 <html>
-    
+  <head>
+    <title>Table Examples</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        text-align: center;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tables Example!</h1>
+    <table cellpadding="5" cellspacing="6">
+      <thead>
+        <tr>
+          <th>Sl.No</th>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- td -> tableData -->
+          <td>1</td>
+          <td>Ricky</td>
+          <td rowspan="2">ricky@gmail.com</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Mathew</td>
+          <!-- <td>Mathew@gmail.com</td> -->
+        </tr>
+        <tr>
+          <td colspan="2">3</td>
+          <td>Gilly</td>
+          <!-- <td>gilly@gmail.com</td> -->
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
