@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Forms Intro</title>
+  </head>
+  <body>
+    <h2>Introduction to Forms</h2>
+    <h3>Login Form</h3>
+
+    <!-- GET => fetch the data from backend
+        select * from employee 
+        -> all the details of employee table.
+    -->
+
+    <!-- POST => used to create a entry in the table 
+        insert into employee values('raghav', 'abc@123');
+        -> save the data of employee!
+    -->
+
+    <form action="welcome.html" 
+    method="GET" 
+    target="_blank">
+      <label for="username">UserName :- </label>
+      <input type="text" name="username" />
+      <br />
+      <br />
+      <label for="password">Password :- </label>
+      <input type="password" name="password" />
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Clear Form" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<html>
+
+<head>
+  <title>Form Elements</title>
+</head>
+
+<body>
+  <h2>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">
+      Form Elements
+    </a>
+  </h2>
+  <form action="get">
+    <table>
+      <tr>
+        <td><label for="email">Email :- </label></td>
+        <td>
+          <input type="email" name="email" 
+          placeholder="Enter Email" 
+          required />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="username">UserName :- </label></td>
+        <td>
+          <input type="text" name="username" 
+          placeholder="Enter Username" 
+          required 
+          minlength="4" 
+          maxlength="8" />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="password">Password :- </label></td>
+        <td>
+          <input type="password" name="password" placeholder="Enter Password" required />
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="gender">Gender :- </label></td>
+        <td>
+          <input type="radio" name="gender" /> Male
+          <input type="radio" name="gender" /> Female
+          <input type="radio" name="gender" /> Others
+        </td>
+      </tr>
+      <tr>
+        <td><label for="hobbies">Hobbies :- </label></td>
+        <td>
+          <input type="checkbox" name="hobbies" />Reading Books
+          <input type="checkbox" name="hobbies" />Playing Instrument
+          <input type="checkbox" name="hobbies" />Trekking
+        </td>
+      </tr>
+      <tr>
+        <td><label for="country">Country :- </label></td>
+        <td>
+          <select name="country" id="country">
+            <option value="0"></option>
+            <option value="1">India</option>
+            <option value="2">Australia</option>
+            <option value="3">USA</option>
+            <option value="4">England</option>
+            <option value="5">South Africa</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="address">Address :- </label></td>
+        <td>
+          <textarea name="address" id="address" 
+          cols="20" rows="3"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="date">Select DOB :- </label></td>
+        <td><input type="date" name="date" /></td>
+      </tr>
+
+      <tr>
+        <td><label for="range">Range</label></td>
+        <td><input type="range" name="range" /></td>
+      </tr>
+
+      <tr>
+        <td><label for="fileUpload">File Upload</label></td>
+        <td><input type="file" name="fileUpload" /></td>
+      </tr>
+      <tr>
+        <td><label for="phone">Phone Number</label></td>
+        <td><input type="number" name="phone" /></td>
+      </tr>
+
+      <tr>
+        <td><input type="reset" value="Clear" /></td>
+        <td><input type="submit" value="Submit" /></td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+<!-- http://127.0.0.1:5500/Day_03/get?
+  email=asdad%40asd&
+  username=asdsad&
+  password=asdsa&
+  gender=on&
+  hobbies=on&
+  country=1&
+  address=sadasd&
+  date=2022-04-26&
+  range=50&
+  fileUpload= -->
+
+</html>
