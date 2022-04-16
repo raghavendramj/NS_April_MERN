@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>External Internal and Inline CSS Example!</title>
+    <link rel="stylesheet" href="03_styles.css" />
+
+    <!-- Internal Styling -->
+    <style>
+      /* THIRD PRIORITY */
+      /* p {
+        color: blueviolet;
+      } */
+
+      /* SECOND PRIORITY */
+      .class_para {
+        color: rebeccapurple;
+      }
+
+      /* FIRST PRIORITY */
+      #id_para {
+        color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Inline/Internal/External</h2>
+    <h3>
+      Selector Priority :-
+      <span>ID > CLASS > ELEMENT/TAGNAME</span>
+    </h3>
+    <h3>
+      Style Priority :-
+      <span>Inline > Internal > External</span>
+    </h3>
+
+    <p>This is para 1</p>
+    <p class="class_para">This is para 2</p>
+
+    <!-- Inline Styling -->
+    <p style="color: deepskyblue" id="id_para" class="class_para">
+      This is para 3
+    </p>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+/* External Styling */
+
+p {
+  color: blue;
+}
+
+.class_para {
+  color: red;
+}
+
+#id_para {
+  color: green;
+}
+
+
+/* TAGNAME < CLASSNAME < ID */
