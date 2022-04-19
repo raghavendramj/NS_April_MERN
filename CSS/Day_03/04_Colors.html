@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>All About Colors</title>
+    <style>
+      div {
+        padding: 10px;
+        margin: 10px;
+        font-size: 30px;
+        border: 2px solid red;
+      }
+
+      /* Normal color text */
+      .container-01 {
+        color: blue;
+      }
+
+      /* Hexa decimal */
+      .container-02 {
+        /* FF -> Red, FF -> Green, FF -> Blue */
+        color: #a5a3bb;
+        /* color: #FF0000; */
+        /* color: #0000FF; */
+      }
+
+      .container-03 {
+        /* Range -> 0 to 255 */
+        /* RED BLUE GREEN -> 0 0 0 -> 255 255 255 */
+        /* color: rgb(255, 0, 0); */
+        /* color: rgb(0, 255, 0); */
+        /* color: rgb(0, 0, 255); */
+        color: rgb(0 0 0);
+      }
+
+      .container-04 {
+        color: hsl(134, 52%, 56%);
+      }
+
+      /* RED BLUE GREEN, A=Opactity */
+      .container-05 {
+        color: rgba(29, 14, 112, 0.9);
+      }
+
+      /* Hue, Saturation, lightness + A=Opacity*/
+      .container-06 {
+        color: hsla(260, 52%, 56%, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-01">Color</div>
+    <div class="container-02">Hexa Decimal</div>
+    <div class="container-03">Red Green & Blue</div>
+    <div class="container-04">Hue Saturation & Light</div>
+    <div class="container-05">Red Green & Blue with Opacity</div>
+    <div class="container-06">Hue Saturation & Light with Opacity</div>
+  </body>
+</html>

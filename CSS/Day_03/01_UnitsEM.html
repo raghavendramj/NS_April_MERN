@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Units of CSS -> EM</title>
+    <style>
+      * {
+        margin: 10px;
+      }
+      body {
+        padding: 10px;
+        border: 2px solid black;
+        height: 800px;
+        /* Default font size is 16px */
+        font-size: 16px;
+      }
+
+      section {
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid red;
+        font-size: 24px;
+      }
+
+      div {
+        padding: 10px;
+        border: 2px solid blue;
+        /* 1em = 1 time of parent's font size  = 24*/
+        /* 2em = 2 times of parent's font size = 24*2=48*/
+        /* 3em = 3 times of parent's font size = 24*3= 72*/
+        font-size: 2em;
+      }
+
+      p {
+        padding: 10px;
+        border: 2px solid brown;
+        /* 1rem = 1 time of root element's font size 16*/
+        /* 2rem = 2 times of root element's font size 32*/
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    This is the
+    <body style="font-size: 20px">
+      <section>
+        This is section
+        <div>
+          This is div
+          <p>This is para</p>
+        </div>
+      </section>
+    </body>
+  </body>
+</html>
