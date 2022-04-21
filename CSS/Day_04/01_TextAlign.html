@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Text Alignment</title>
+    <style>
+      p {
+        border: thin solid red;
+        margin: 10px;
+        padding: 10px;
+      }
+
+      #text1 {
+        text-align: left;
+      }
+      #text2 {
+        text-align: center;
+      }
+      #text3 {
+        text-align: right;
+      }
+      #text4 {
+        direction: ltr;
+      }
+      #text5 {
+        direction: rtl;
+      }
+      #text6,
+      #text7 {
+        direction: rtl;
+        unicode-bidi: bidi-override;
+      }
+
+      #text8 {
+        text-align: left;
+        width: 300px;
+      }
+      #text9 {
+        text-align: justify;
+        width: 300px;
+      }
+
+      span {
+        color: blue;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="text1">This is Basic Text 1</p>
+    <p id="text2">This is Basic Text 2</p>
+    <p id="text3">This is Basic Text 3</p>
+    <p id="text4">Direction :- Left to Right</p>
+    <p id="text5">Direction :- Right to Left</p>
+    <p id="text6">Direction :- Right to Left with bidi-override</p>
+    <p id="text7">مرحبًا بك في الفصل</p>
+
+    <p id="text8">
+      <span>text-align: left</span>
+      Kohli is now back refreshed and recharged, and emphasised on the need to
+      look after one's mental well-being in this bio-bubbles era of cricket. "It
+      is very important to understand that it is crucial to refresh yourself
+      mentally," Kohli said a day before the Mumbai Test.
+    </p>
+
+    <p id="text9">
+      <span>text-align: justify</span>
+      Kohli is now back refreshed and recharged, and emphasised on the need to
+      look after one's mental well-being in this bio-bubbles era of cricket. "It
+      is very important to understand that it is crucial to refresh yourself
+      mentally," Kohli said a day before the Mumbai Test.
+    </p>
+  </body>
+</html>

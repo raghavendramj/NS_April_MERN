@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Text Transformation</title>
+    <style>
+      div {
+        border: medium solid red;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        margin: 10px;
+        font-size: 20px;
+      }
+
+      #whiteSpaceNormal {
+        white-space: normal;
+        width: 200px;
+        border: 2px solid blue; 
+        padding: 5px;
+      }
+
+      #whiteSpaceNoWrap {
+        white-space: nowrap;
+        width: 200px;
+        border: 2px solid blue;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text Transformation</h1>
+
+    <div>
+      <h3>white-space: normal;</h3>
+      <p id="whiteSpaceNormal">
+        With two right-handers in the middle, Shokeen, the debutant offspinner
+      </p>
+    </div>
+
+    <div>
+      <h3>white-space: nowrap;</h3>
+      <p id="whiteSpaceNoWrap">
+        With two right-handers in the middle, Shokeen, the debutant offspinner
+      </p>
+    </div>
+    <div>
+      <h3>line-height: 1.2</h3>
+      <div style="line-height: 1.2; border: none;">
+        <p>With two right-handers in the middle,</p>
+        <p>Shokeen, the debutant offspinner</p>
+      </div>     
+    </div>
+    <div>
+        <h3>line-height: 2</h3>
+        <div style="line-height: 2; border: none;">
+          <p>With two right-handers in the middle,</p>
+          <p>Shokeen, the debutant offspinner</p>
+        </div>     
+      </div>
+
+      <div>
+        <h3>line-height: 0</h3>
+        <div style="line-height: 0; border: none;">
+          <p>With two right-handers in the middle,</p>
+          <p>Shokeen, the debutant offspinner</p>
+        </div>     
+      </div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Text Decoration</title>
+    <style>
+      h1 {
+        text-decoration-line: none;
+        text-decoration-color: purple;
+      }
+
+      /* #mistake{
+        text-decoration-line: line-through;
+        text-decoration-color: red;
+      }
+      #correct{
+        text-decoration-line: underline;
+        text-decoration-color: green;
+      }
+      #info{
+        text-decoration-line: overline;
+        text-decoration-color: orange;
+      } */
+
+      /* #mistake {
+        text-decoration-line: line-through;
+        text-decoration-color: red;
+        text-decoration-style: wavy;
+      }
+      #correct {
+        text-decoration-line: underline;
+        text-decoration-color: green;
+        text-decoration-style: double;
+      }
+      #info {
+        text-decoration-line: overline;
+        text-decoration-color: orange;
+        text-decoration-style: dotted;
+        text-decoration-thickness: 10px;
+      } */
+
+      /* Short hand -> line, style, color, thickness */
+      #mistake {
+        text-decoration: line-through #ff0000 wavy 4px;
+      }
+      #correct {
+        text-decoration: underline #00ff00 double 2px;
+      }
+      #info {
+        text-decoration: overline #0000ff dotted 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The text will be decorated</h1>
+
+    <div id="mistake">This is a mistake</div>
+    <span id="correct">Absolutely Correct!</span>
+    <span id="info">Information</span>
+  </body>
+</html>

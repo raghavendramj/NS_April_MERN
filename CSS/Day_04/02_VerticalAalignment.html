@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Vertical Alignment</title>
+    <style>
+      p {
+        border: thin solid red;
+        margin: 10px;
+        padding: 10px;
+      }
+      img {
+        height: 10px;
+        width: 30px;
+      }
+
+      #abc {
+        vertical-align: baseline;
+      }
+      #def {
+        vertical-align: bottom;
+      }
+      #xyz {
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Baseline!</h3>
+    <p>
+      The image <img id="abc" src="images/oranges.jfif" /> has Vertical
+      alignment as baseline
+    </p>
+
+    <p>
+      The image <img id="def" src="images/oranges.jfif" /> has Vertical
+      alignment as bottom
+    </p>
+    <p>
+      The image <img id="xyz" src="images/oranges.jfif" /> has Vertical
+      alignment as middle
+    </p>
+  </body>
+</html>
