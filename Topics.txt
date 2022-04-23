@@ -1,0 +1,86 @@
+1. HTML
+		-> Elements
+			-> Inline Elements
+			-> Block Level Elements
+			-> Semantics Elements
+			-> HTML Tables
+			-> HTML Forms
+			-> HTML5
+2. CSS
+	-> Introduction
+		-> Priority
+			-> Element Selectors :- Id > Class > Tagname/Element
+			-> CSS :- Inline > Internal > External
+		-> Group Selectors
+		-> Inline Elements
+		-> Block Elements
+		-> Units -> px, vw, vh, em, rem
+		-> Colors
+		-> Text Shadow
+		-> Text Align
+		-> Vertical Alignment
+		-> Text Decoration
+		-> CSS Fonts
+		-> CSS Icons
+		-> Background
+	-> CSS Box Model
+		-> Content + Padding + Border + Margin
+		-> Div Center Horizantally
+		-> Div Center vertically
+		-> Div Center Horizantally + vertically => Center of the screen
+		->Border Styles
+	-> CSS Layouts
+		-> Layour visibility
+			-> display -> none, block and inline-block
+			-> visibility -> hidden, visible
+			->CSS Positions
+				-> Absolute, relative, fixed, static
+			-> Floating
+				-> left, right, both
+			-> Clear
+		->  CSS Combinators
+			-> +, > ~
+			-> Pseduo Class
+				:firstline,
+				Links
+					:link
+					:active
+					:visited
+					:hover
+				:Empty
+				body :not(p)
+				:first-child
+				:last-child
+				:nth-child(odd)
+				:nth-child(even)
+				:nth-child
+				:nth-last-child
+			-> Pseduo Elements
+				::before
+				::after
+				::firstline
+				::firstletter
+			->Flex Box
+			-> CSS Grid
+			-> CSS3 and CSS Animations
+			-> Bootstrap
+
+3. JavaScript
+		Basics of javascript
+		JavaScript Arrays, Objects and Functions
+		IIFE
+		Scope
+		Closure
+		Hoisting
+		JS Methods
+		Introduction to DOM
+		------------------
+		ES6
+		Callbacks
+		Callback Hell
+		Promises
+		JSON
+		AJAX
+		----------------------------
+		Web Storage -> skip
+		Security and Authorzation -> skip
