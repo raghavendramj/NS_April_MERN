@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>Psuedo With forms</title>
+    <style>
+
+        input:focus{
+            background-color: yellowgreen;
+        }
+
+        input#submit:hover{
+            color: red;
+            cursor: pointer;
+            /* cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto; */
+            background-color: antiquewhite;
+            font-size: 24px;
+            border-radius: 10px;
+        }
+        option:checked{
+            color: red;
+            background-color: lightgreen;
+        }
+
+        input:disabled{
+            background-color: grey;
+            color: white;
+            cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/meh.png"), auto;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <form action="index.html">
+            <fieldset>
+                <legend>Psuedo Elements Form!</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="firstName">First Name : </label></td>
+                            <td><input type="text" name="firstName" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lastName">Last Name : </label></td>
+                            <td><input type="text" name="lastName" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="emailId">Email Address : </label></td>
+                            <td>
+                                <input type="text" name="emailId" disabled value="raghav@gmail.com" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="country">Select Country : </label></td>
+                            <td>
+                                <select>
+                                    <option value="1">India</option>
+                                    <option value="2">Australia</option>
+                                    <option value="3">New Zeland</option>
+                                    <option value="4">England</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input id="submit" type="submit" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+
+</html>

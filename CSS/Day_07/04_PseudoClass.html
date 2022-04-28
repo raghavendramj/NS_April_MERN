@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Pseudo Elements</title>
+    <style>
+      p::first-line {
+        color: red;
+        font-variant: small-caps;
+        font-size: 30px;
+      }
+      p::first-letter {
+        color: green;
+        font-size: 40px;
+      }
+
+      p.one::after {
+        content: " I am a Telugu actor";
+        font-size: 25px;
+        font-variant: small-caps;
+        text-decoration: underline wavy;
+      }
+
+      p.one::before {
+        content: "Welcome to the session ";
+        text-decoration: overline dotted blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      You can use the ::first-line pseudo-element to add a special effect to the
+      first line of a text. Some more text. And even more, and more, and more,
+      and more, and more, and more, and more, and more, and more, and more, and
+      more, and more.
+    </p>
+
+    <p class="one">
+      My name is Ram charan first line of a text. Some more text. And even more,
+      and more, and more, and more, and more, and more, and more, and more, and
+      more, and more, and more, and more.
+    </p>
+  </body>
+</html>

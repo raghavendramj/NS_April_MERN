@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>CSS Combinators</title>
+    <style>
+      p {
+        border: thin solid red;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 10px;
+      }
+
+      div > p#secondPara {
+        text-indent: 20px;
+        color: blue;
+      }
+
+      div > p#firstPara {
+        text-decoration: underline;
+        color: green;
+      }
+
+      div > span > p {
+          font-size: 24px;
+          color: red;
+          font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Combinators!</h1>
+    <p>This is my first Paragraph</p>
+    <p>This is my second Paragraph</p>
+    <p>This is my third Paragraph</p>
+    <div>
+      <p id="firstPara">This is my fourth Paragraph</p>
+      <p id="secondPara">This is my fifth Paragraph</p>
+      <span>
+        <p>This is my sixth Paragraph</p>
+      </span>
+    </div>
+    <p>This is my seventh Paragraph</p>
+  </body>
+</html>
