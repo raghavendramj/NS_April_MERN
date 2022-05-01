@@ -1,0 +1,136 @@
+body {
+  background-color: honeydew;
+}
+
+header {
+  font-weight: bolder;
+  /*
+    color : color-> red, blue yellow...
+    color : #FFFFFF -> FF -> RED, FF-> BLUE, FF -> GREEN
+    color: rgb(red, blue, green)
+    Range :- 0 - 255
+    rgb(0, 0, 0) -> black
+    rgb(255, 255, 255) -> white
+    rgb(255, 0, 0) -> RED
+    rgb(0, 255, 0) -> GREEN
+    rgb(0, 0, 255) -> BLUE
+    a -> Opactity/Transparency
+    rgba(0, 0, 0, 0.5)
+    */
+  color: rgb(255, 255, 255);
+  background-color: rgba(25, 65, 40, 0.68);
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+#navigate {
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+
+.menu {
+  margin: 0%;
+  background-color: rgba(25, 65, 40, 0.5);
+}
+
+.menu > li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.menu li {
+  padding: 10px;
+  display: inline-block;
+  /* list-style: none; */
+}
+
+.menu li:nth-last-child(2),
+li:nth-last-child(1) {
+  float: right;
+  margin-right: 10px;
+}
+
+.menu li:hover {
+  background-color: rgb(8, 8, 8);
+  border-radius: 5px;
+}
+
+#indianews,
+#worldnews {
+  margin: 10px;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.news {
+  position: relative;
+  border: 2px solid green;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+  margin: 5px;
+}
+
+.news img {
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0%;
+  width: 280px;
+  border-radius: 5px;
+  max-width: 280px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease;
+  opacity: 0;
+  overflow: hidden;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.news:hover .overlay {
+  opacity: 1;
+}
+
+#support {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  float: right;
+  padding: 5px;
+  margin: 5px;
+}
+
+#support a {
+  background-color: grey;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  display: inline;
+  border-radius: 5px;
+}
+
+#support a:hover {
+  color: white;
+  background-color: rgb(8, 8, 8);
+}
