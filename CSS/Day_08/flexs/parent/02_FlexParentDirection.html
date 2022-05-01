@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>CSS Flex Box - Parent flex-direction</title>
+    <style>
+      .flex-container {
+        display: flex;
+        background-color: dodgerblue;
+        /* column, column-reverse, row, row-reverse */
+        flex-direction: row-reverse;
+      }
+
+      .flex-container > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        text-align: center;
+        line-height: 75px;
+        margin: 10px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>The "flex-direction: column;"</h2>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>

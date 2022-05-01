@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>CSS Flex Box - Parent align-items</title>
+    <style>
+      .flex-container {
+        display: flex;
+        height: 500px;
+        background-color: dodgerblue;
+        /* baseline, center, flex-start, flex-end, stretch(default) */
+        align-items: stretch;
+      }
+
+      .flex-container > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        text-align: center;
+        line-height: 75px;
+        margin: 10px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>The "align-items"</h2>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>
