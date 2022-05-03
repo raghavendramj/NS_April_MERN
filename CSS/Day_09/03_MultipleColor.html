@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>CSS Linear Gradient - Angle</title>
+    <style>
+      div {
+        height: 200px;
+        font-size: 40px;
+        border: 2px solid red;
+        margin: 20px;
+        text-align: center;
+        border-radius: 10px;
+        color: white;
+      }
+      #div01 {
+        background-image: linear-gradient(red, yellow, green);
+      }
+      #div02 {
+        height: 400px;
+        background-image: linear-gradient(
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+      }
+      #div03 {
+        height: 400px;
+        background-image: linear-gradient(red 10%, green 75%, blue 90%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Linear Gradient - Multiple Colors</h1>
+
+    <div id="div01">3 Color Stops (evenly spaced):</div>
+    <div id="div02">7 Color Stops (evenly spaced):</div>
+    <div id="div03">3 Color Stops (not evenly spaced):</div>
+  </body>
+</html>

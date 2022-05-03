@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>CSS Attr Selector Not</title>
+    <style>
+      div[title~="four"] {
+        background-color: yellow;
+        font-size: 20px;
+      }
+
+      [class|="top"] {
+        background-color: yellowgreen;
+      }
+      [class^="bottom"] {
+        background-color: yellowgreen;
+      }
+
+      [class$="test"]{
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS [attribute~="value"] Selector</h2>
+    <div title="number two">Number One</div>
+    <div title="three number">Number Two</div>
+    <div title="two and four">Number THree</div>
+
+    <h2>CSS [attribute|="value"]</h2>
+    <p>whose value can be exactly the specified value, or the specified value followed by a hyphen (-).</p>
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text">Hello world!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+
+    <h2>CSS [attribute^="value"] Selector</h2>
+    <p>whose value starts with the specified value.</p>
+      
+      <h1 class="bottom-header">Welcome</h1>
+      <p class="textbottom">Hello world!</p>
+      <p class="bottomcontent">Are you learning CSS?</p>
+
+
+      <h2>CSS [attribute$="value"] Selector</h2>
+      <p>whose attribute value ends with a specified value.</p>
+      <div class="first_test">The first div element.</div>
+      <div class="second">The second div element.</div>
+      <div class="my-test">The third div element.</div>
+      <p class="mytest">This is some text in a paragraph.</p>
+      
+
+  </body>
+</html>

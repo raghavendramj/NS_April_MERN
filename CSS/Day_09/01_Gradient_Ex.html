@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>CSS Linear Gradient - Top to Bottom</title>
+    <style>
+      div {
+        height: 200px;
+        font-size: 50px;
+        border: 2px solid red;
+        margin: 20px;
+        text-align: center;
+        border-radius: 10px;
+      }
+      #div01 {
+        background-image: linear-gradient(red, yellow);
+      }
+      #div02 {
+        background-image: linear-gradient(to right, red, yellow);
+      } 
+       #div03 {
+        background-image: linear-gradient(to bottom right, yellow, blue);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Linear Gradient - Top to Bottom</h1>
+
+    <div id="div01">Default - TOP TO BOTTOM</div>
+    <div id="div02">LEFT TO RIGHT</div>
+    <div id="div03">TOP LEFT TO BOTTOM RIGHT</div>
+  </body>
+</html>
