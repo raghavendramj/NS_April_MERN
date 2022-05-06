@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Media Objcts</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      div.card {
+        width: 30vw;
+        margin: 40px;
+        border-radius: 10px;
+      }
+      div.container {
+        display: flex;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Card Image Example</h2>
+    <div class="container mt-3">
+      <div>
+        <p>Image at the top (card-img-top):</p>
+        <div class="card">
+          <img src="images/img_avatar.png" alt="" class="card-img-top" />
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Full Stack Developer</p>
+            <a href="" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>Image at the bottom (card-img-bottom):</p>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Full Stack Developer</p>
+            <a href="" class="btn btn-primary">See Profile</a>
+          </div>
+          <img src="images/img_avatar.png" alt="" class="card-img-top" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
