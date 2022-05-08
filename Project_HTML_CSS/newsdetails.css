@@ -9,7 +9,7 @@ header {
   font-size: xx-large;
   text-align: center;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.685);
+  background-color: rgba(12, 17, 61, 0.685);
 }
 footer {
   background-color: black;
@@ -20,15 +20,14 @@ footer {
   bottom: 0%;
   text-align: center;
 }
-#navigate {
-  position: -webkit-sticky;
+#navigate { 
   position: sticky;
   top: 0%;
   z-index: 1;
 }
 .menu {
   margin: 0%;
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgba(172, 23, 23, 0.5);
 }
 .menu li a {
   color: white;
@@ -44,7 +43,7 @@ footer {
 }
 #side {
   position: absolute;
-  top: 25%;
+  top: 13%;
   left: 2%;
   background-color: white;
   border: steelblue;
@@ -61,6 +60,12 @@ footer {
 }
 .cricket-news:nth-child(even) {
   background-color: thistle;
+  color: white;
+}
+
+a:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 #main {
   position: relative;
